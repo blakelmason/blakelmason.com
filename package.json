@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm i && cd client && npm i && npm run build"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,8 @@
   },
   "homepage": "https://github.com/blakelmason/blakelmason.com#readme",
   "engines": {
-    "node": ">=12"
+    "node": ">=12",
+    "npm": ">=6.9.0"
   },
   "dependencies": {
     "express": "^4.17.1"
