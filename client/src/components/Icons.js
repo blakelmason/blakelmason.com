@@ -19,26 +19,46 @@ const icons = [
   }
 ]
 
-const Icon = styled.img({
-  background: 'white',
-  opacity: '.2',
-  transform: 'scale(1)',
-  ':hover': {
-    opacity: '1',
-    transform: 'scale(1.1)'
-  },
-  transition: 'all .2s',
-  height: 40,
-  width: 40,
-  cursor: 'pointer',
-  borderRadius: '4px'
-})
+const Icon = styled.img`
+  background: white;
+  opacity: 0.2;
+  transform: scale(1);
+  transition: all 0.2s;
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+`
+
+const Line = styled.div`
+  width: 0%;
+  border-top: 1px solid #dee2e6;
+  transition: all 0.3s ease-in-out;
+`
+
+const Name = styled.div`
+  opacity: 0.2;
+  transition: 0.2s;
+`
+
+const Link = styled.div`
+  cursor: pointer;
+  &:hover ${Name} {
+    opacity: 1;
+  }
+  &:hover ${Icon} {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  &:hover ${Line} {
+    width: 100%;
+  }
+`
 
 function Icons() {
   return (
     <div className="d-flex ml-auto">
       {icons.map((icon, i) => (
-        <div
+        <Link
           key={`icon-${i}`}
           className="d-flex flex-column align-items-center mx-3"
         >
@@ -46,15 +66,15 @@ function Icons() {
             <Icon src={icon.image} alt="icon" className="img-fluid" />
           </a>
           <div
-            style={{ fontSize: '.7rem' }}
-            className="text-center mt-1 d-flex flex-column align-items-center"
+            style={{ fontSize: '.6rem', marginTop: 2 }}
+            className="text-center d-flex flex-column align-items-center"
           >
-            {icon.name}
-            <div style={{ width: '110%' }}>
-              <div className="border-top" style={{ width: '100%' }} />
+            <Name>{icon.name}</Name>
+            <div style={{ width: '105%' }}>
+              <Line />
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   )

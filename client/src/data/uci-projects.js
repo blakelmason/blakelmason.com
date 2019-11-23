@@ -18,10 +18,11 @@ const projects = [
       'Sequelize',
       'MySQL',
       'JWT',
-      'Heroku',
+      'Heroku'
     ],
-    d1: 'Template application for authentication and conditional route rendering in React.',
-    d2: 'Login: test1@gmail.com\nPassword: testtest'
+    description:
+      'Template application for authentication and conditional route rendering in React.',
+    login: 'Login: test1@gmail.com\nPassword: testtest'
   },
   {
     name: 'Handy Helper',
@@ -40,10 +41,11 @@ const projects = [
       'MongoDB',
       'Mongoose',
       'JWT',
-      'Heroku',
+      'Heroku'
     ],
-    d1: 'Coding bootcamp final project. A community driven app for people to find help with home projects.',
-    d2: 'Login: test1@gmail.com\nPassword: test'
+    description:
+      'Coding bootcamp final project. A community driven app for people to find help with home projects.',
+    login: 'Login: test1@gmail.com\nPassword: test'
   },
   {
     name: 'NYT React App',
@@ -61,10 +63,10 @@ const projects = [
       'Bootstrap',
       'MongoDB',
       'Mongoose',
-      'Heroku',
+      'Heroku'
     ],
-    d1:
-      'React application to search and save historical New York Times articles.',
+    description:
+      'React application to search and save historical New York Times articles.'
   },
   {
     name: 'React Clicky Game',
@@ -76,9 +78,9 @@ const projects = [
       'JavaScript',
       'React',
       'Create React App',
-      'Bootstrap',
+      'Bootstrap'
     ],
-    d1: 'Memory game using React.',
+    description: 'Memory game using React.'
   },
   {
     name: 'Cheerio Web Scraper',
@@ -97,9 +99,9 @@ const projects = [
       'Bootstrap',
       'MongoDB',
       'Mongoose',
-      'Heroku',
+      'Heroku'
     ],
-    d1: 'Web Scraper for D&D Beyond articles.',
+    description: 'Web Scraper for D&D Beyond articles.'
   },
   {
     name: 'Eat-Da-Burger',
@@ -115,30 +117,30 @@ const projects = [
       'Handlebars',
       'Bootstrap',
       'SQL',
-      'Heroku',
+      'Heroku'
     ],
-    d1: 'Create, read, update, and delete custom burgers.',
+    description: 'Create, read, update, and delete custom burgers.'
   },
   {
     name: 'Hangman Adventure',
     url: 'https://blakelmason.github.io/projects/hangman-adventure/index.html',
     github: 'https://github.com/blakelmason/hangman-adventure',
     tools: ['HTML', 'CSS', 'JavaScript'],
-    d1: 'Fight your way through an epic hangman adventure!',
+    description: 'Fight your way through an epic hangman adventure!'
   },
   {
     name: 'D&D Spell Tool',
     url: 'https://aaronsy1.github.io/firstGroupProject/spells.html',
     github: 'https://github.com/aaronsy1/firstGroupProject',
     tools: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
-    d1: 'Spell reference and dice rolling for Dungeons & Dragons.',
+    description: 'Spell reference and dice rolling for Dungeons & Dragons.'
   },
   {
     name: 'Giphy API',
     url: 'https://blakelmason.github.io/projects/giphy-tool/index.html',
     github: 'https://github.com/blakelmason/giphy-tool',
     tools: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
-    d1: 'Find a GIF using the Giphy API.',
+    description: 'Find a GIF using the Giphy API.'
   },
   {
     name: 'Pokémon Picker',
@@ -151,17 +153,17 @@ const projects = [
       'jQuery',
       'Node.js',
       'Express.js',
-      'Bootstrap',
+      'Bootstrap'
     ],
-    d1: 'Receive a starter Pokémon after filling out a survey',
+    description: 'Receive a starter Pokémon after filling out a survey'
   },
   {
     name: 'Trivia Game',
     url: 'https://blakelmason.github.io/projects/trivia-game/index.html',
     github: 'https://github.com/blakelmason/trivia-game',
     tools: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap'],
-    d1: 'A fun trivia game.',
-  },
+    description: 'A fun trivia game.'
+  }
 ]
 
 export default projects
