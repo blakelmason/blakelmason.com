@@ -1,85 +1,32 @@
 import React, { Component } from 'react'
-import Tool from './components/Tool'
-import Project from './components/Project'
-
+import Icons from './components/Icons'
 import './App.scss'
-
-import toolList from './toolList'
-import projects from './projects'
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="bg-light">
         <div
-          className="mb-5 mt-sm-5"
-          style={{
-            background: 'rgb(0,0,0,.5)',
-            paddingTop: 22,
-            paddingBottom: 37,
-          }}
+          className="container border-right border-left p-5 bg-white shadow"
+          style={{ minWidth: 1000, minHeight: '100vh' }}
         >
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <div
-                  className="text-white display-4"
-                  style={{ marginBottom: 25 }}
-                >
-                  Blake Mason - Web Portfolio
-                </div>
-              </div>
+          <div className="d-flex align-items-end">
+            <div
+              className="display-4"
+              style={{ lineHeight: 1, fontWeight: 200 }}
+            >
+              Blake Mason - Web Portfolio
             </div>
+            <Icons />
           </div>
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <div
-                  style={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    flex: 1,
-                  }}
-                >
-                  <div
-                    className="text-white display-4 mr-2 ml-1 my-1 position-relative"
-                    style={{
-                      height: 31,
-                      fontSize: '1.6rem',
-                      bottom: 2,
-                    }}
-                  >
-                    Tools :
-                  </div>
-                  {toolList.map((tool, index) => (
-                    <Tool
-                      text={tool[0]}
-                      link={tool[1]}
-                      key={tool[0]}
-                      time={index}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container mb-3 mb-sm-5">
-          <div className="row">
-            <div className="col">
-              <div
-                style={{
-                  display: 'grid',
-                  gridGap: 30,
-                  gridTemplateColumns: 'repeat(auto-fill, minmax(15rem, 1fr))',
-                }}
-              >
-                {projects.map(project => (
-                  <Project key={project.name} {...project} />
-                ))}
-              </div>
-            </div>
-          </div>
+          <hr className="mb-5 mt-1" />
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum."
         </div>
       </div>
     )
