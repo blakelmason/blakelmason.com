@@ -10,7 +10,7 @@ class App extends Component {
       <div className="bg-light">
         <div
           className="container border-right border-left p-5 bg-white shadow"
-          style={{ minWidth: 1000, minHeight: '100vh' }}
+          style={{ minWidth: 1140, minHeight: '100vh' }}
         >
           <div className="d-flex align-items-end">
             <div

@@ -4,7 +4,10 @@ import tools from '../data/toolList'
 function Tools() {
   return (
     <div className="mb-5">
-      <div className="d-inline-block h-1 mb-3 position-relative">
+      <div
+        className="d-inline-block h-1 position-relative"
+        style={{ marginBottom: 28 }}
+      >
         <div style={{ zIndex: 1 }} className="position-relative">
           Tools
         </div>
