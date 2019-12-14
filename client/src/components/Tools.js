@@ -1,4 +1,7 @@
 import React from 'react'
+
+import Tool from './Tool'
+
 import tools from '../data/toolList'
 
 function Tools() {
@@ -21,21 +24,6 @@ function Tools() {
           <Tool key={`tool-${i}`} name={tool[0]} url={tool[1]} />
         ))}
       </div>
-    </div>
-  )
-}
-
-function Tool({ name, url }) {
-  return (
-    <div className="d-inline-block m-1">
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn btn-light btn-sm"
-      >
-        {name}
-      </a>
     </div>
   )
 }

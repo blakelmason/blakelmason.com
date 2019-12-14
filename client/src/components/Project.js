@@ -1,61 +1,61 @@
 import React from 'react'
-import { Card, ButtonGroup, Button } from 'react-bootstrap'
+import styled from 'styled-components'
 
-const Project = ({ name, d1, d2, tools, github, url }) => {
+import githubPNG from '../images/github.png'
+
+const Image = styled.img`
+  opacity: 0.2;
+  height: 16px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.2s;
+  position: absolute;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+`
+
+function Project({ name, url, description, tools, github }) {
   return (
-    <Card
-      style={{
-        boxShadow: '.2rem .2rem 1rem rgba(0,0,0,.6)',
-        background: 'rgba(0,0,0,.8)',
-      }}
-      className="text-light hover animated fadeIn slow"
-    >
-      <Card.Body className="d-flex flex-column justify-content-between">
-        <Card.Title className="mb-1">{name}</Card.Title>
-        <Card.Subtitle
-          className="text-muted mt-0"
+    <div className="px-3 mb-4">
+      <div style={{ fontSize: '1.3rem' }}>
+        <div className="d-flex">
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <strong>{name}</strong>
+          </a>
+          <div className="d-flex align-items-center">
+            <a
+              style={{ width: 16, height: 16, marginLeft: 6 }}
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={githubPNG} alt="github" />
+            </a>
+          </div>
+        </div>
+        <div
+          className="text-muted"
           style={{
-            marginBottom: 12,
+            fontSize: '.9rem',
+            marginLeft: -4,
+            marginRight: 4,
+            marginBottom: 6
           }}
         >
-          {tools.map((tool, index) => {
-            if (index + 1 === tools.length) return tool
-            else return `${tool}, `
-          })}
-        </Card.Subtitle>
-        <Card.Text
-          className="mb-3 h-100 d-flex flex-column justify-content-between"
-          style={{
-            whiteSpace: 'pre-wrap',
-          }}
-        >
-          
-          <span>{d1}</span>
-          {d2 &&
-            <span>
-              <span className="d-block" style={{height: '1px', background: 'white', opacity: '.5', marginTop: '10px', marginBottom: '10px'}}/>
-              <span>{d2}</span>
+          {tools.map((tool, i) => (
+            <span className="m-1" key={`project-tool-${i}`}>
+              {tool}
+              {i === tools.length - 1 ? '' : ','}
             </span>
-          }
-        </Card.Text>
-        <ButtonGroup className="w-100" size="sm">
-          <Button
-            className="w-50"
-            variant="outline-primary"
-            onClick={() => window.open(url, '_blank')}
-          >
-            App
-          </Button>
-          <Button
-            className="w-50"
-            variant="outline-primary"
-            onClick={() => window.open(github, '_blank')}
-          >
-            Github
-          </Button>
-        </ButtonGroup>
-      </Card.Body>
-    </Card>
+          ))}
+        </div>
+      </div>
+      <div className="d-inline-block">
+        {description} <hr className="mt-1 mb-0" />
+      </div>
+    </div>
   )
 }
 

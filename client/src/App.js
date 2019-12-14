@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+
 import Icons from './components/Icons'
 import Tools from './components/Tools'
 import Projects from './components/Projects'
+
 import './App.scss'
 
 class App extends Component {
@@ -13,10 +15,7 @@ class App extends Component {
           style={{ minWidth: 1140, minHeight: '100vh' }}
         >
           <div className="d-flex align-items-end">
-            <div
-              className="display-4"
-              style={{ lineHeight: 1, fontWeight: 200 }}
-            >
+            <div className="display-4" style={{ fontWeight: 200 }}>
               Blake Mason - Web Portfolio
             </div>
             <Icons />

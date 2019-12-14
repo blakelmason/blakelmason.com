@@ -25,29 +25,6 @@ const projects = [
     login: 'Login: test1@gmail.com\nPassword: testtest'
   },
   {
-    name: 'Handy Helper',
-    url: 'https://gentle-reaches-45549.herokuapp.com/',
-    github: 'https://github.com/tghazal/project-3',
-    tools: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'Node',
-      'Express',
-      'React',
-      'React Router',
-      'Create React App',
-      'Bootstrap',
-      'MongoDB',
-      'Mongoose',
-      'JWT',
-      'Heroku'
-    ],
-    description:
-      'Coding bootcamp final project. A community driven app for people to find help with home projects.',
-    login: 'Login: test1@gmail.com\nPassword: test'
-  },
-  {
     name: 'NYT React App',
     url: 'https://ancient-shore-12375.herokuapp.com/',
     github: 'https://github.com/blakelmason/nyt-react-app',
@@ -81,27 +58,6 @@ const projects = [
       'Bootstrap'
     ],
     description: 'Memory game using React.'
-  },
-  {
-    name: 'Cheerio Web Scraper',
-    url: 'https://intense-mesa-35004.herokuapp.com/',
-    github: 'https://github.com/blakelmason/web-scraper/blob/master/server.js',
-    tools: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'Node',
-      'Express',
-      'Cheerio',
-      'React',
-      'React Router',
-      'Create React App',
-      'Bootstrap',
-      'MongoDB',
-      'Mongoose',
-      'Heroku'
-    ],
-    description: 'Web Scraper for D&D Beyond articles.'
   },
   {
     name: 'Eat-Da-Burger',

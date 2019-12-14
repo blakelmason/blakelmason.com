@@ -1,53 +1,18 @@
-import React, { Component } from 'react'
-import { Button } from 'react-bootstrap'
+import React from 'react'
 
-class Tool extends Component {
-  state = {
-    show: true,
-  }
-
-  // componentDidMount() {
-  //   setTimeout(() => {
-  //     this.setState({ show: true })
-  //   }, this.props.time * 60)
-  // }
-
-  render() {
-    const { text, link } = this.props
-    const { show } = this.state
-    return (
-      // <Media query="(min-width: 576px)">
-      //   {matches =>
-      //     matches ? (
-      //       <Button
-      //         variant="dark"
-      //         size="sm"
-      //         className={`d-flex align-items-center justify-content-center m-1 animated ${
-      //           show ? 'flipInY' : 'opacity-0'
-      //         }`}
-      //         onClick={() => window.open(link, '_blank')}
-      //       >
-      //         {text}
-      //       </Button>
-      //     ) : (
-            <Button
-              variant="outline-light"
-              style={{
-                overflow: 'hidden',
-              }}
-              size="sm"
-              className={`d-flex align-items-center justify-content-center m-1 animated slow ${
-                show ? 'fadeIn' : 'opacity-0'
-              }`}
-              onClick={() => window.open(link, '_blank')}
-            >
-              {text}
-            </Button>
-      //     )
-      //   }
-      // </Media>
-    )
-  }
+function Tool({ name, url }) {
+  return (
+    <div className="d-inline-block m-1">
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-light btn-sm"
+      >
+        {name}
+      </a>
+    </div>
+  )
 }
 
 export default Tool

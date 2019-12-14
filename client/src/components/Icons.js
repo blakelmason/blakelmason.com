@@ -19,9 +19,11 @@ const icons = [
   }
 ]
 
+const opacity = '0.5'
+
 const Icon = styled.img`
   background: white;
-  opacity: 0.2;
+  opacity: ${opacity};
   transform: scale(1);
   transition: all 0.2s;
   height: 30px;
@@ -35,16 +37,8 @@ const Line = styled.div`
   transition: all 0.3s ease-in-out;
 `
 
-const Name = styled.div`
-  opacity: 0.2;
-  transition: 0.2s;
-`
-
 const Link = styled.div`
   cursor: pointer;
-  &:hover ${Name} {
-    opacity: 1;
-  }
   &:hover ${Icon} {
     opacity: 1;
     transform: scale(1.1);
@@ -69,7 +63,7 @@ function Icons() {
             style={{ fontSize: '.6rem', marginTop: 2 }}
             className="text-center d-flex flex-column align-items-center"
           >
-            <Name>{icon.name}</Name>
+            <div>{icon.name}</div>
             <div style={{ width: '105%' }}>
               <Line />
             </div>
