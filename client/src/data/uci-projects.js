@@ -25,27 +25,6 @@ const projects = [
     login: 'Login: test1@gmail.com\nPassword: testtest'
   },
   {
-    name: 'NYT React App',
-    url: 'https://ancient-shore-12375.herokuapp.com/',
-    github: 'https://github.com/blakelmason/nyt-react-app',
-    tools: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'Node',
-      'Express',
-      'React',
-      'React Router',
-      'Create React App',
-      'Bootstrap',
-      'MongoDB',
-      'Mongoose',
-      'Heroku'
-    ],
-    description:
-      'React application to search and save historical New York Times articles.'
-  },
-  {
     name: 'React Clicky Game',
     url: 'https://blakelmason.github.io/clicky-game/',
     github: 'https://github.com/blakelmason/clicky-game',
