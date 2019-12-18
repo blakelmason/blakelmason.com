@@ -14,7 +14,7 @@ const icons = [
   {
     image: resume,
     url:
-      'https://drive.google.com/file/d/1PCrxfltb_yVgxU4xOWQYHRP-yP5Y2psp/view?usp=sharing',
+      'https://drive.google.com/file/d/1iwSPgGqDVnBI7yFNMUmkM2qsEi_gNQic/view?usp=sharing',
     name: 'Resume'
   }
 ]
