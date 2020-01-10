@@ -13,8 +13,7 @@ const icons = [
   },
   {
     image: resume,
-    url:
-      'https://drive.google.com/file/d/1qwaMvR7uCzyPML54YIuY2liKJm_IgyN_/view?usp=sharing',
+    url: 'https://github.com/blakelmason/resume/raw/master/resume.pdf',
     name: 'Resume'
   }
 ]
