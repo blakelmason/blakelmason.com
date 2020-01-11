@@ -9,7 +9,8 @@
     "dev": "nodemon server",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm i && cd client && npm i && npm run build",
-    "resume": "git add . && git commit -m \"resume\" && git push origin master"
+    "resume": "git add . && git commit -m \"resume\" && git push origin master",
+    "lazy": "git add . && git commit -m \"lazy\" && git push origin master"
   },
   "repository": {
     "type": "git",
