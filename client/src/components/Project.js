@@ -20,7 +20,7 @@ function Project({ name, url, description, tools, github }) {
   return (
     <div className="px-3 mb-4">
       <div style={{ fontSize: '1.3rem' }}>
-        <div className="d-flex">
+        <div className="d-flex mb-1">
           <a href={url} target="_blank" rel="noopener noreferrer">
             <strong>{name}</strong>
           </a>
@@ -36,7 +36,7 @@ function Project({ name, url, description, tools, github }) {
           </div>
         </div>
         <div
-          className="text-muted"
+          className="text-muted d-flex flex-wrap"
           style={{
             fontSize: '.9rem',
             marginLeft: -4,
@@ -45,15 +45,22 @@ function Project({ name, url, description, tools, github }) {
           }}
         >
           {tools.map((tool, i) => (
-            <span className="m-1" key={`project-tool-${i}`}>
+            <div className="m-1" key={`project-tool-${i}`}>
               {tool}
               {i === tools.length - 1 ? '' : ','}
-            </span>
+            </div>
           ))}
         </div>
       </div>
-      <div className="d-inline-block">
-        {description} <hr className="mt-1 mb-0" />
+      <div
+        className="d-inline-block"
+        style={{
+          lineHeight: 1.5,
+          textJustify: 'inter-word',
+          textAlign: 'justify'
+        }}
+      >
+        - {description} <hr className="mt-1 mb-0" />
       </div>
     </div>
   )

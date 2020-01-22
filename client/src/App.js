@@ -10,17 +10,22 @@ class App extends Component {
   render() {
     return (
       <div className="bg-light">
-        <div
-          className="container border-right border-left p-5 bg-white shadow"
-          style={{ minWidth: 1140, minHeight: '100vh' }}
-        >
-          <div className="d-flex align-items-end">
-            <div className="display-4" style={{ fontWeight: 200 }}>
-              Blake Mason - Web Portfolio
-            </div>
-            <Icons />
+        <div className="container px-3 px-lg-5 py-5 bg-white shadow">
+          <div
+            className="text-center display-4"
+            style={{ fontWeight: 200, fontSize: 48 }}
+          >
+            Blake Mason
           </div>
-          <hr className="mb-5 mt-1" />
+          <div
+            className="text-center mt-3 mb-5"
+            style={{ fontWeight: 200, fontSize: 36 }}
+          >
+            Web Portfolio
+          </div>
+          <hr className="mb-3 mt-4" />
+          <Icons />
+          <hr className="mb-5 mt-3" />
           <Tools />
           <Projects />
         </div>

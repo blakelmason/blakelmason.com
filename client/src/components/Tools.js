@@ -21,7 +21,7 @@ function Tools() {
       </div>
       <div style={{ marginLeft: -4, marginRight: -4 }}>
         {tools.map((tool, i) => (
-          <Tool key={`tool-${i}`} name={tool[0]} url={tool[1]} />
+          <Tool key={`tool-${i}`} name={tool[0]} url={tool[1]} icon={tool[2]} />
         ))}
       </div>
     </div>

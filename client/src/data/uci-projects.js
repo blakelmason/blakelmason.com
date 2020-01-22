@@ -90,14 +90,14 @@ const projects = [
       'Express',
       'Bootstrap'
     ],
-    description: 'Receive a starter Pokémon after filling out a survey'
+    description: 'Receive a starter Pokémon after filling out a survey.'
   },
   {
     name: 'Trivia Game',
     url: 'https://blakelmason.github.io/projects/trivia-game/index.html',
     github: 'https://github.com/blakelmason/trivia-game',
     tools: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap'],
-    description: 'A fun trivia game.'
+    description: 'A fun trivia game!'
   }
 ]
 

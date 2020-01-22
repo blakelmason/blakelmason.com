@@ -7,7 +7,7 @@ function Tool({ name, url }) {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn btn-light btn-sm"
+        className="btn btn-outline-secondary shadow-sm btn-sm"
       >
         {name}
       </a>

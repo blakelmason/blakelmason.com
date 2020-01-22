@@ -13,6 +13,8 @@ const toolList = [
   ['MySQL', 'https://www.mysql.com/'],
   ['PostgreSQL', 'https://www.postgresql.org/'],
   ['Sequelize', 'http://docs.sequelizejs.com/'],
+  ['GraphQL', 'https://graphql.org/'],
+  ['Apollo', 'https://graphql.org/'],
   ['HTML', 'https://www.w3schools.com/html/html_intro.asp'],
   ['CSS', 'https://www.w3schools.com/html/html_css.asp'],
   ['Sass', 'https://sass-lang.com/'],
@@ -26,8 +28,10 @@ const toolList = [
   ['Cheerio', 'https://cheerio.js.org/'],
   ['Puppeteer', 'https://developers.google.com/web/tools/puppeteer'],
   ['JWT', 'https://jwt.io/'],
+  ['Docker', 'https://www.docker.com/'],
   ['Heroku', 'https://www.heroku.com/'],
-  ['DigitalOcean', 'https://www.digitalocean.com/']
+  ['DigitalOcean', 'https://www.digitalocean.com/'],
+  ['AWS', 'https://aws.amazon.com/']
 ]
 
 export default toolList

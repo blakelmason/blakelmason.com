@@ -18,15 +18,12 @@ const icons = [
   }
 ]
 
-const opacity = '0.5'
-
 const Icon = styled.img`
   background: white;
-  opacity: ${opacity};
   transform: scale(1);
   transition: all 0.2s;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 4px;
 `
 
@@ -39,7 +36,6 @@ const Line = styled.div`
 const Link = styled.div`
   cursor: pointer;
   &:hover ${Icon} {
-    opacity: 1;
     transform: scale(1.1);
   }
   &:hover ${Line} {
@@ -49,7 +45,7 @@ const Link = styled.div`
 
 function Icons() {
   return (
-    <div className="d-flex ml-auto">
+    <div className="d-flex justify-content-around">
       {icons.map((icon, i) => (
         <Link
           key={`icon-${i}`}
@@ -59,7 +55,7 @@ function Icons() {
             <Icon src={icon.image} alt="icon" className="img-fluid" />
           </a>
           <div
-            style={{ fontSize: '.6rem', marginTop: 2 }}
+            style={{ fontSize: 12, marginTop: 6 }}
             className="text-center d-flex flex-column align-items-center"
           >
             <div>{icon.name}</div>

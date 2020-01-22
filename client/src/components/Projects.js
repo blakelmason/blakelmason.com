@@ -13,7 +13,7 @@ function Projects() {
     <>
       <div className="d-inline-block h-1 position-relative mb-5">
         <div style={{ zIndex: 1 }} className="position-relative">
-          Programs
+          Boot Camps
         </div>
         <div
           className="border-bottom position-absolute w-100"
